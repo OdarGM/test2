@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#home {
+    padding-top:50px;
+    height:500px;
+    color: #fff;
+    background-color: #00bcd4;
+}
+
+#home img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home h1{
+    text-align: center;
+    border-radius: 4px;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home h1 span{
+    border: 4px dashed #00ff00;
+    padding: 10px;
+}
+
+#home p{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#home button a{
+    text-align: center;
+}
+
+.inv{
+    color: cyan;
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+
+.inv:hover{
+    text-decoration: none;
+    color: cyan;
+    text-shadow: 2px 2px red;
+}
+
+.p2 a{ 
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.p2 a:hover{
+    text-decoration: none;
+    color: #00ff00;
+}
+
+
+#features {
+    padding-top:50px;
+    height:500px;
+    color: #fff;
+    background-color: #009688;
+    
+}
+
+#features h1{
+    text-align: center;
+    border-radius: 4px;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#features p{
+    text-align: center;
+    font-size: 2.5rem; 
+}
+
+#features table{
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+}
+
+#features td{
+    border: 1px solid #009688;
+    text-align: left;
+    padding: 7px;
+    font-size: 2.2rem;
+}
+
+#features th{
+    border: 1px solid #009688;
+    text-align: center;
+    padding: 7px;
+    font-size: 2.4rem;
+}
+
+#features p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.2rem;
+}
+
+#features p a{
+    text-decoration: none;
+    color: #00ff00;
+}
+
+#team {
+    padding-top:50px;
+    height:750px;
+    color: #fff;
+    background-image: url("./Images/staff.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 1300px 750px;
+}
+
+#team p{
+    position: absolute;
+    bottom: 1px;
+    color: #f1f1f1;
+}
+
+#team p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#topBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    outline: none;
+    border: none;
+    background-color: rgba(134, 43, 43, 0.7);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#topBtn:hover{
+    background-color: cyan;
+}
+
+.forgie{
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+.ava{
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.overlay{
+    position: absolute;
+    background: rgb(0, 0, 0);
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 50%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.forgie:hover .overlay {
+    opacity: 1;
+}
+
+footer{
+    text-align: center;
+    background-color: #0e0e0e;
+}
