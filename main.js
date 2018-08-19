@@ -21,29 +21,94 @@ function typeWritr(){
 		i++;
 		setTimeout(typeWritr, 77)
 	}
-}
+};
+
+//BACK TO TOP BUTTON
+
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 100){
+			$("#toTop").fadeIn()
+		} else {
+			$("#toTop").fadeOut()
+		}
+	});
+
+	$("#toTop").click(function(){
+		$("html", "body").animate({
+			scrollTop: 0
+		}, 600)
+	})
+
+});
+
+//WORK FADEIN ON CLICK
+
+$(document).ready(function(){
+	$("#btnie").click(function(){
+		$("#work").fadeIn(2000)
+	})
+});
+
+//WORK FADEIN ON SCROLL
+
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 20){
+			$("#work").fadeIn(2000)
+		}
+	})
+})
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*--------OTHER CODES---------*/
 
 /*
+
+//SHOW WORK TITLE ON SCROLL
+
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 20){
+			$(".worieTitl").css ({ left: "50%" })
+		}
+	})
+}) 
+
+//SOME SHIT
+
+$(document).ready(function(){
+    $("body").scrollspy({ target: ".wrkBtn", offset: 50 });
+  $("#workBtn a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+
+//BACK TO TOP PURE JS
+
+window.onscroll = function() {scrolFunc()};
+function scrolFunc() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("toTop").style.display = "block";
+    } else {
+        document.getElementById("toTop").style.display = "none";
+    }
+}
+function toTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 
 	var goToTop = function() {
 
